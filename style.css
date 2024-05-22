@@ -52,20 +52,28 @@ a:hover {
 
     padding: 50px;
 
-    background-color: white;
-
-    animation: addShadow linear both;
+    animation-name: addShadow, whiten;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
     animation-timeline: scroll();
-	animation-range: 500px 600px;
+	animation-range: 520px 550px, 500px 525px;
 
-    z-index: 1;
+    z-index: 3;
 }
 @keyframes addShadow {
     0% {
         box-shadow: none;
     }
     100% {
-        box-shadow: 5px 5px 5px silver;
+        box-shadow: 3px 3px 3px silver;
+    }
+}
+@keyframes whiten {
+    0% {
+        background: none;
+    }
+    100% {
+        background-color: white;
     }
 }
 
@@ -196,7 +204,7 @@ a:hover {
 .shadow {
     border: 1px solid silver;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px silver;
+    box-shadow: 3px 3px 3px silver;
 
     padding: 20px;
 }
