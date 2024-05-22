@@ -114,11 +114,18 @@ a:hover {
 
     display: flex;
     align-items: center;
-}
 
-#hero:after {
-    color: white;
-    mix-blend-mode: difference;
+    animation: minimize linear both;
+    animation-timeline: scroll();
+	animation-range: 0 150px;
+}
+@keyframes minimize {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #hero-svg-container {
