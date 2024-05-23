@@ -137,6 +137,10 @@ a:hover {
 @media (max-width: 480px) {
     #banner {
         margin-top: 50px;
+
+        animation: none;
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
 
