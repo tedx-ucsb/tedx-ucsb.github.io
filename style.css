@@ -22,6 +22,16 @@ p {
     font-size: 14px;
 
     line-height: 2;
+
+    text-align: justify;
+}
+@media (max-width: 480px) {
+    p {
+        color: dimgray;
+        font-size: 18px;
+
+        line-height: 1.8;
+    }
 }
 
 a {
@@ -96,6 +106,11 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
 }
+@media (max-width: 480px) {
+    #right-align {
+        display: none;
+    }
+}
 
 #banner {
     position: relative;
@@ -117,6 +132,11 @@ a:hover {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+@media (max-width: 480px) {
+    #banner {
+        margin-top: 50px;
     }
 }
 
@@ -151,6 +171,11 @@ a:hover {
         opacity: 0;
     }
 }
+@media (max-width: 480px) {
+    #hero {
+        font-size: 50px;
+    }
+}
 
 #hero-svg-container {
     position: absolute;
@@ -174,6 +199,14 @@ a:hover {
 
     min-height: 50px;
     line-height: 50px;
+}
+@media (max-width: 480px) {
+    #footer {
+        line-height: 25px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 .header {
@@ -201,6 +234,11 @@ a:hover {
         transform: translateX(0px);
     }
 }
+@media (max-width: 480px) {
+    .header {
+        font-size: 35px;
+    }
+}
 
 .nav-link {
     font-family: "Montserrat", sans-serif;
@@ -222,10 +260,12 @@ a:hover {
     z-index: 0;
 }
 
-.shadow {
-    border: 1px solid silver;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px silver;
-
-    padding: 20px;
+@media (min-width: 481px) {
+    .shadow {
+        border: 1px solid silver;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px silver;
+    
+        padding: 20px;
+    }
 }
