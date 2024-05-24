@@ -165,7 +165,6 @@ a:hover {
 
     animation: minimize linear both;
     animation-timeline: scroll();
-	animation-range: 0 150px;
 }
 @keyframes minimize {
     0% {
@@ -175,9 +174,16 @@ a:hover {
         opacity: 0;
     }
 }
+@media (min-width: 481px) {
+    #hero {
+        animation-range: 0 150px;
+    }
+}
 @media (max-width: 480px) {
     #hero {
         font-size: 50px;
+
+        animation-range: 300px 450px;
     }
 }
 
