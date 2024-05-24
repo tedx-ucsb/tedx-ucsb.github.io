@@ -254,6 +254,23 @@ a:hover {
 @media (max-width: 480px) {
     .header {
         font-size: 35px;
+
+        -webkit-view-timeline-name: --move-in-header;
+        -webkit-view-timeline-axis: block;
+
+        -webkit-animation: moveIn linear both;
+        -webkit-animation-timeline: --move-in-header;
+        -webkit-animation-range: entry 33% cover 50%;
+    }
+    @-webkit-keyframes moveIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
 }
 
