@@ -86,6 +86,14 @@ a:hover {
         background-color: white;
     }
 }
+@media (max-width: 480px) {
+    #nav-bar {
+        animation: none;
+
+        background-color: white;
+        box-shadow: 3px 3px 3px silver;
+    }
+}
 
 #left-align {
     float: left;
@@ -165,6 +173,7 @@ a:hover {
 
     animation: minimize linear both;
     animation-timeline: scroll();
+    animation-range: 0 150px;
 }
 @keyframes minimize {
     0% {
@@ -174,16 +183,14 @@ a:hover {
         opacity: 0;
     }
 }
-@media (min-width: 481px) {
-    #hero {
-        animation-range: 0 150px;
-    }
-}
 @media (max-width: 480px) {
     #hero {
         font-size: 50px;
+        
+        animation: none;
 
-        animation-range: 300px 450px;
+        opacity: 1;
+        color: black;
     }
 }
 
