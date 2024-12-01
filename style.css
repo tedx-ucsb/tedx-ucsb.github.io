@@ -362,8 +362,8 @@ a:not(.yt-link):not(.button):hover {
 }
 
 .application-button {
-    width: calc((100% - 100px) * 0.3);
-    margin-right: calc((100% - 100px) * 0.05);
+    width: calc((100% - 100px) * 0.45);
+    margin-right: calc((100% - 100px) * 0.1);
     margin-left: -10px;
 
     text-align: center;
