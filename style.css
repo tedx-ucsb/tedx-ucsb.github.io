@@ -43,6 +43,10 @@ a:not(.yt-link):not(.button):hover {
     text-decoration: underline;
 }
 
+b {
+    font-weight: 900;
+}
+
 #body-div {
     background-color: white;
     padding-left: 50px;
